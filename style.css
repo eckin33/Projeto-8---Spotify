@@ -1,0 +1,886 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    background-image: url(imagens/capa.png),
+                      url(imagens/ruido.png),
+                      linear-gradient(50deg ,#ff4169, #7c26f8);
+                      background-attachment: fixed;
+}
+#header_son{
+    display: flex;
+    position: fixed;
+    z-index: 90;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.568);
+    padding: 15px 32px;
+    justify-content: space-between;
+    align-items: center;
+    height: 82px;
+    
+}
+#header_son.voltar{
+    justify-content: space-between;
+}
+#menu{
+    display: none;
+
+}
+header  nav  ul{
+    cursor: pointer;
+}
+header  nav  ul  li:hover{
+    text-decoration: none;
+    cursor: pointer;
+    color: #9bf0e1;
+}
+#header_son1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+main{
+    width: 98vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main_son{
+    font-size: 5em;
+    font-weight: 900;
+}
+#spot_header{
+    width: 160px;
+    margin-left: 6%;
+}
+nav{
+    display: flex;
+    color: white;
+    flex-flow: row nowrap;
+}
+.ul_nav_menu{
+    display: flex;
+    gap:15px;
+    flex-direction: row;
+}
+
+#last_1_ul{
+    padding :0 15px 0 0;
+    border-right: 1px solid white;
+}
+#first_2_ul{
+    padding: 0 0 0 18px;
+}
+section{
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    position: relative;
+    z-index: 1;
+
+}
+#box_imgs{
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 28px;
+    row-gap: 20px;
+    margin: 20px 0 0 12%;
+    width: 750px;
+    
+}
+.box1_i{
+    width: 220px;
+
+}
+#box_text{
+    font-size: 1.2em;
+    padding-right: 110px;
+    position: relative;
+    left: -25px;
+}
+.bt_h1{
+    font-size: 2.6em;
+    color: #7c25f8;
+    margin-bottom: 15px;
+    padding-top: 12px;
+}
+.bt_h2{
+    color: #7c25f8;
+    font-size: 1.8em;
+    margin: 15px 0;
+}
+.bt_p{
+    color: rgba(0, 0, 0, 0.808);
+    font-weight: 100;
+    font-size: .9em;
+}
+.h2s2{
+    color: #9bf0e1;
+    font-size: 2.2em;
+    margin: 20px 0;
+}
+.h1s2{
+    color: white;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.ps2{
+    color: white;
+}
+#sec2{
+    background-color: transparent;
+    font-weight: 800;
+    width: 100%;
+    height: 670px;
+    margin: auto;
+    
+}
+
+#boxtexts2{
+    width: 25%;
+    height: 100%;
+    margin: 0 7% 0 12%;
+    text-align: justify;
+
+}
+
+#boximgss2{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+    transform: rotate(28deg);
+    
+}
+.iphones{
+    width: 320px;
+    height: 632px;
+    
+}
+footer{
+    background-color: black;
+    display: flex;
+    height: 180px;
+    position: relative;
+    row-gap: 30px;
+    font-size: .8em;
+    
+}
+.ulFooter{
+    display: flex;
+    flex-flow: column;
+    gap: 8px;
+    
+    
+}
+.footerl{
+    margin: 0 30px;
+    padding-top: 40px;
+    height: 150px;
+
+}
+.ulFooter > li > a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+
+}
+.ulFooter > li > a:hover{
+    color: #9bf0e1;
+    text-decoration: underline;
+
+}
+h3{
+    color: rgb(109, 109, 109);
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    
+}
+#spot_footer{
+    position: relative;
+    top: -22px;
+    margin-left: 14%;
+    width: 160px;
+
+}
+.iconsf{
+    width: 55px;
+}
+#icons_footer{
+    display: flex;
+    margin-left: 13%;
+    align-items: center;
+    padding-bottom: 40px;
+}
+#icons_son{
+    display: flex;
+    gap: 12px;
+    flex-flow: row nowrap;
+
+}
+.a_icon_footer{
+    transition: transform .3s ease;
+
+}
+.a_icon_footer:hover{
+    transform: scale(1.15);
+
+}
+#iphone1{
+    transition: transform .3s ease;
+}
+#iphone1:hover{
+    transform: translateY(30px);
+}
+#iphone2{
+    transition: transform .3s ease;
+    position: relative;
+    top: -65px;
+}
+#iphone2:hover{
+    transform: translateY(-40px);
+}
+
+@media screen and (min-width: 1199px){
+
+    #box_imgs{
+        display: flex;
+        flex-flow: row wrap;
+        column-gap: 28px;
+        row-gap: 20px;
+        margin: 20px 0 0 6%;
+        width: 1000px;
+        justify-content: center;
+        
+    }
+    .box1_i{
+        width: 220px;
+
+    }
+    .ul_nav_menu{
+        flex-flow: row nowrap;
+
+    }
+    #box_text{
+        font-size: 1.2em;
+        padding-right: 100px;
+        position: relative;
+        left: -10px;
+    }  
+    section{
+        position: relative;
+        z-index: 1;
+    }
+    #sec2{
+        background-color: transparent;
+        font-weight: 800;
+        width: 100%;
+        height: 670px;
+        margin: auto;
+        z-index: 1;
+        position: relative;
+        overflow-x: clip;
+        
+    }
+
+    #boxtexts2{
+        width: 25%;
+        height: 100%;
+        margin: 0 10% 0 6%;
+        text-align: justify;
+
+    }
+
+    #boximgss2{
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 20px;
+        transform: rotate(28deg);
+        
+    }
+    .iphones{
+        width: 300px;
+        height: 550px;
+    }
+    #iphone1{
+        position: relative;
+        top: 65px;
+
+    }
+    #iphone2{
+        position: relative;
+        top: 25px;
+    }
+    #spot_header{
+        margin-left: 0%;
+
+    }
+    #spot_footer{
+        margin-left: 7.5%;
+
+    }
+    #icons_son{
+        flex-flow: row nowrap;
+        display: flex;
+        gap: 8px;
+
+    }
+
+
+}
+
+@media screen and (min-width: 1024px) and (max-width:1199px){
+
+    #box_imgs{
+        display: flex;
+        flex-flow: row wrap;
+        column-gap: 28px;
+        row-gap: 20px;
+        justify-content: center;
+        margin: 0;
+        max-width: 420px;
+    }
+    img.box1_i{
+        width: 180px;
+
+    }
+    #box_text{
+        font-size: 1em;
+        width: 517px;
+        margin: 0 0 0 30px;
+    }  
+    section{
+        z-index: 1;
+        position: relative;
+        justify-content: center;
+    }
+    #sec2{
+        background-color: transparent;
+        font-weight: 800;
+        width: 100%;
+        height: 670px;
+        margin: auto;
+        z-index: 1;
+        position: relative;
+        overflow-x: clip;
+
+    }
+
+    #boxtexts2{
+        width: 50%;
+        height: 100%;
+        margin: 0 10% 0 6%;
+        text-align: justify;
+        font-size: 1em;
+
+    }
+
+    #boximgss2{
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 20px;
+        transform: rotate(28deg);
+        position: relative;
+        top: 50px;
+        right: 20px;
+        
+    }
+    .iphones{
+        width: 250px;
+        height: 500px;
+        position: relative;
+        z-index: 3;
+        overflow-x: clip;
+        
+    }
+    #iphone1{
+        top: -20px;
+        z-index: 4;
+    }
+    #iphone2{
+        bottom: -28px;
+        z-index: 5;
+    }
+    footer{
+        z-index: 0;
+        position: relative;
+    }
+    #spot_header{
+        margin-left: 0%;
+
+    }
+    #spot_footer{
+        margin-left: 7.5%;
+
+    }
+    .ul_nav_menu{
+        flex-flow: row nowrap;
+
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1023px){
+
+    #box_imgs{
+        display: flex;
+        flex-flow: row wrap;
+        column-gap: 28px;
+        row-gap: 20px;
+        margin: 20px 2% 0 6%;
+        max-width: 420px;
+        justify-content: center;
+        
+    }
+    #header_son{
+        height: 80px;
+    }
+    #menu{
+        display: none;
+    }
+    
+    .box1_i{
+        width: 150px;
+
+    }
+    #box_text{
+        font-size: .8em;
+        padding-right: 0px;
+        position: relative;
+        left: -6px;
+    }  
+    section{
+        z-index: 1;
+        position: relative;
+    }
+    #sec2{
+        background-color: transparent;
+        font-weight: 800;
+        width: 100%;
+        height: 580px;
+        margin: auto;
+        z-index: 1;
+        position: relative;
+        overflow-x: clip;
+
+    }
+
+    #boxtexts2{
+        width: 50%;
+        height: 100%;
+        margin: 0 6% 0 3%;
+        text-align: justify;
+        font-size: 1em;
+
+    }
+
+    #boximgss2{
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 20px;
+        transform: rotate(12deg);
+        position: relative;
+        top: 50px;
+        right: 20px;
+        
+    }
+    .iphones{
+        width: 200px;
+        height: 400px;
+        position: relative;
+        z-index: 3;
+        overflow-x: clip;
+        
+    }
+    #iphone1{
+        top: -50px;
+        z-index: 4;
+    }
+    #iphone2{
+        top: 50px;
+        z-index: 5;
+    }
+    footer{
+        z-index: 0;
+        position: relative;
+    }
+    #spot_header{
+        margin-left: 0%;
+        width: 120px;
+
+    }
+    #spot_footer{
+        margin-left: 7.5%;
+        width: 140px;
+
+    }
+    header{
+        font-size: .8em;
+        height: 65px;
+    }
+        
+    .iconsf{
+        width: 40px;    
+        margin: 0;
+        padding: 0;
+        
+    }
+    #box_imgs{
+        margin: 0;
+        padding: 0;
+
+    }
+    #icons_footer{
+        display: flex;
+        margin-left: 3%;
+        align-items: center;
+        padding-bottom: 0px;
+    }
+    #icons_son{
+        display: flex;
+        gap: 8px;
+        flex-flow: column;
+    }
+    .a_icon_footer{
+        transition: transform .3s ease;
+
+    }
+    .a_icon_footer:hover{
+        transform: scale(1.15);
+
+    }
+}
+@media screen and (min-width:326px) and (max-width: 450px){
+    body{
+        overflow-x: clip;
+    }
+    #spot_header{
+        width: 100px;
+
+    }
+    #menu{
+        border: 1px solid white;
+        color: white;
+        padding: 4px 8px;
+        border-radius: 5px;
+        display: inline-block;
+        cursor: pointer;
+
+    }
+    #header_son{
+        height: 65px;
+
+    }
+    header nav{
+        display: none;
+    }
+    
+    .box1_i{
+        max-width: 400px;
+        min-width: 90%;
+        margin: 0 auto;
+
+    }
+    #box_imgs{
+        flex-flow: column nowrap;
+        margin: 0;
+        padding: 0;
+        column-gap: 0;
+        row-gap: 20px;
+        width: 100%;
+
+    }
+    #box_text{
+        margin: 0 auto 0 8%;
+        padding: 0;
+        width: 90%;
+        font-size: 1.1em;
+
+    }
+    #boxtexts2{
+        height: 620px;
+
+    }
+    section{
+        flex-flow: column nowrap;
+        margin: 0;
+        padding: 20px 0;
+        gap: 20px;
+
+    }
+    .iphones{
+        width: 120px;
+        height: 220px;
+
+    }
+    .bt_h1{
+        
+        font-size: 2.4em;
+        
+    }
+    #sec2{
+        flex-flow: column nowrap;
+        min-height: 1260px;
+        margin: 0;
+        padding: 20px 0;
+        overflow-x: clip;
+
+    }
+    #boxtexts2{
+        width: 80%;
+        margin: 0 6% 0 6%;
+        height: 680px;
+
+    }
+    #boximgss2{
+        gap: 0;
+        margin: 0;
+        padding: 0;
+        width: 300px;
+        justify-content: space-evenly;
+
+    }
+    footer{
+        flex-flow: column nowrap;
+        height: 700px;
+    }
+    #spot_footer{
+        margin: 0;
+        padding: 0 0 0 25px;
+        position: relative;
+        top: 30px;
+
+    }
+    #icons_son{
+        display: flex;
+        flex-flow: row nowrap;
+
+    }
+    #icons_footer{
+        padding-left: 18px;
+    }
+    #boximgss2{
+        top: -50px;
+        position: relative;
+        transform: rotate(25deg);
+
+    }
+    .iphones{
+        width: 350px;
+        height: 380px;
+        margin: 0;
+        padding: 0;
+    }
+    #iphone1:hover{
+        transform: none;
+        transition: none;
+    }
+    #iphone2:hover{
+        transform: none;
+        transition: none;
+    }
+    #iphone1{
+        position: relative;
+        top: -170px;
+        left: 134px;
+    }
+    #iphone2{
+        position: relative;
+        top: 220px;
+        right: 52px;
+    }
+}
+@media screen and (min-width:451px) and (max-width:799px){
+
+    *{
+        overflow-x: clip;
+    }
+    #menu{
+        border: 1px solid white;
+        color: white;
+        padding: 4px 8px;
+        border-radius: 5px;
+        display: inline-block;
+        cursor: pointer;
+    }
+    #box_imgs{
+        display: flex;
+        flex-flow: row wrap;
+        column-gap: 28px;
+        row-gap: 20px;
+        margin: 20px 2% 0 6%;
+        max-width: 250px;
+        justify-content: center;   
+    }
+    .box1_i{
+        width: 120px;
+    }
+    #box_text{
+        font-size: 1em;
+        padding-right: 0px;
+        padding: 55px 0;
+        position: relative;
+        left: -6px;
+    }  
+    section{
+        z-index: 1;
+        position: relative;
+        padding: 6px;
+    }
+    #sec2{
+        background-color: transparent;
+        font-weight: 800;
+        width: 100%;
+        height: 1200px;
+        margin: auto;
+        z-index: 1;
+        position: relative;
+        overflow-x: clip;
+        flex-flow:column ;
+    }
+    #boxtexts2{
+        width: 90%;
+        height: 600px;
+        margin: 0 6% 0 3%;
+        text-align: justify;
+        font-size: 1em;
+    }
+    #boximgss2{
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 20px;
+        transform: rotate(12deg);
+        position: relative;
+        top: 50px;
+        right: 20px;
+        overflow-x: visible;
+    }
+    .iphones{
+        max-width: 300px;
+        min-width: 20%;
+        max-height: 400px;
+        min-height: 20%;
+        position: relative;
+        z-index: 3;
+        overflow-x: clip;
+    }
+    #iphone1{
+        top: -150px;
+        z-index: 4;
+        left: 20px;
+    }
+    #iphone2{
+        top: -50px;
+        left: 30px;
+        z-index: 5;
+    }
+    #iphone2:hover, #iphone1:hover{
+        transform: scale(1.1);
+    }
+    footer{
+        z-index: 0;
+        position: relative;
+        flex-flow: row nowrap;
+        height: 300px;
+    }
+    #spot_header{
+        margin-left: 0%;
+        width: 120px;
+    }
+    #spot_footer{
+        margin-left: 7.5%;
+        width: 140px;
+        position: absolute;
+        left: 10px;
+        top: 38px;
+    }
+    #icons_son{
+        position: absolute;
+        top: 40px;
+        right: 50px;
+        flex-flow: row nowrap;
+        display: flex;
+    }
+    #header_son{
+        font-size: .8em;
+        height: 65px;
+        transition: height .3s ease;
+    }
+    .iconsf{
+        width: 40px;    
+        margin: 0;
+        padding: 0;
+    }
+    #box_imgs{
+        margin: 0;
+        padding: 0;
+    }
+    #icons_footer{
+        display: flex;
+        margin-left: 3%;
+        align-items: center;
+        padding-bottom: 0px;
+    }
+    .a_icon_footer{
+        transition: transform .3s ease;
+    }
+    .a_icon_footer:hover{
+        transform: scale(1.15);
+    }
+    .footerl{
+        position: relative;
+        top: 90px;
+        left: 20px;
+    }
+}
+@media screen and (max-width: 630px){
+    #nav_menu{
+        display: none;
+    }
+    #header_son.expandido{
+        height: 360px;
+    }
+    #nav_menu.expandido{
+        display: block;
+    }
+    .ul_nav_menu{
+        flex-direction: column;
+        margin-bottom: 15px;
+        font-size: 1.6em;
+    }
+    #menu.expandido{
+        position: absolute;
+        top: 12px;
+        right: 30px;
+    }
+    #last_1_ul{
+        padding-right: 0px;
+        border-right: none;
+    }
+    #first_2_ul{
+        padding-left: 0;
+    }
+    #spot_header{
+        width: 150px;
+    }
+    #spot_header.expandido{
+        position: absolute;
+        top: 12px;
+    }
+
+}
+@media  screen and (min-width: 629px) and (max-width: 798px) {
+    #menu{display:
+        none;
+    }
+    #nav_menu{
+        flex-flow: row nowrap;
+    }   
+}

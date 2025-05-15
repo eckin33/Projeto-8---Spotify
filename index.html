@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    
+</head>
+<body>
+    <header>
+        <div id="header_son">
+            <img src="imagens/spotify.svg" id="spot_header">
+            <span id="menu"class="material-symbols-outlined" onclick="abrirMenu()">Menu</span>
+            <nav id="nav_menu">
+                <ul type="none" class="ul_nav_menu">
+                    <li>Premium</li>
+                    <li>Ajuda</li>
+                    <li id="last_1_ul">Baixar</li>
+                </ul>
+                <ul type="none" class="ul_nav_menu">
+                    <li id="first_2_ul">Inscreva-se</li>
+                    <li>Entrar</li>                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="main_son">Spotify</div>
+    </main>
+
+    <section>
+        <div id="box_imgs">
+            <img src="imagens/img1.jpg" class="box1_i">
+            <img src="imagens/img2.jpg" class="box1_i">
+            <img src="imagens/img3.jpg" class="box1_i">
+            <img src="imagens/img4.jpg" class="box1_i">
+        </div>
+
+        <div id="box_text">
+            <h1 class="bt_h1">O que o spotify tem?</h1>
+            <h2 class="bt_h2">Músicas</h2>
+            <p class="bt_p">O Spotify tem milhões de músicas. Escute seus sons favoritos, descubra novas músicas e reúna seus favoritos em um só lugar.</p>
+            <h2 class="bt_h2">Playlists</h2>
+            <p class="bt_p">No Spotify você encontra uma playlist para cada momento. Todas feitas por fanáticos e especialistas da música.</p>
+            <h2 class="bt_h2">Novos lançamentos</h2>
+            <p class="bt_p">Escute os novos lançamentos de singles e álbuns da semana e veja o que está bombando no Top 50.</p>
+        </div>
+
+    </section>
+    
+    <section id="sec2">
+    
+        <div id="boxtexts2">
+            <h1 class="h1s2">Fácil</h1>
+            <h2 class="h2s2">Buscar</h2>
+            <p class="ps2">Já sabe o que quer escutar? É só procurar e apertar o play.
+            </p>
+            <h2 class="h2s2">Navegar</h2>
+            <p class="ps2">Veja os novos lançamentos, o que está bombando nas paradas e as melhores playlists para o seu momento.
+            </p>
+            <h2 class="h2s2">Descobrir</h2>
+            <p class="ps2">Curta músicas novas toda segunda-feira com uma playlist personalizada pra você. Ou relaxe e curta uma das rádios
+            </p>
+        </div>
+
+        <div id="boximgss2">
+
+            <img src="imagens/iphone1.png" class="iphones" id="iphone1">
+            <img src="imagens/iphone2.png" class="iphones" id="iphone2">
+
+        </div>
+    </section>
+
+    <footer>
+        <img src="imagens/spotify.svg" id="spot_footer">
+
+        <div class="footerl" id="l_footer1">
+                <h3>COMPANY</h3>
+            <ul type="none"class="ulFooter">
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Empregos</a></li>
+                <li><a href="">Imprensa</a></li>
+                <li><a href="">Novidades</a></li>
+            </ul>
+        </div>
+
+        <div class="footerl" id="l_footer2">
+            <h3>COMUNIDADES</h3>
+            <ul type="none"class="ulFooter">
+                <li><a href="">Artistas</a></li>
+                <li><a href="">Desenvolvedores</a></li>
+                <li><a href="">Marcas</a></li>
+            </ul>
+        </div>
+        <div class="footerl"  id="l_footer3">
+            <h3>LINKS UTEIS</h3>
+            <ul type="none"class="ulFooter">
+                <li><a href="">Ajuda</a></li>
+                <li><a href="">Presentes</a></li>
+                <li><a href="">Player da web</a></li>
+            </ul>
+        </div>
+
+        <div id="icons_footer">
+            <div id="icons_son">
+                <a href="instagram.com" class="a_icon_footer"><img src="imagens/instagram.png" class="iconsf"></a>
+                <a href="x.com" class="a_icon_footer"><img src="imagens/twitter.png" class="iconsf"></a>
+                <a href="facebook.com" class="a_icon_footer"><img src="imagens/facebook.png" class="iconsf"></a>
+
+            </div>
+        </div>
+    </footer>
+    <script>
+        function abrirMenu(){
+
+            const nav_menu = document.getElementById('nav_menu');
+            const header_son = document.getElementById('header_son');
+            const spot = document.getElementById('spot_header');
+            const btn = document.getElementById('menu');
+            const ul_nav_menu = document.getElementsByClassName('ul_nav_menu');
+            const last_1_ul = document.getElementById('last_1_ul')
+            
+            if (nav_menu.style.display == 'block'){
+                
+                nav_menu.style.display = 'none'
+                header_son.classList.remove('expandido');
+                ul_nav_menu.classList.add('padrao');
+                btn.classList.remove('expandido')
+                nav_menu.style.width = '300px'
+            } else {
+                nav_menu.style.display = 'block'
+                header_son.classList.add('expandido');
+                nav_menu.style.height = '110px'
+                nav_menu.style.flexDirection = 'column'
+                spot.classList.add('expandido');
+                btn.classList.add('expandido')
+            }
+        }
+    </script>
+</body>
+</html>
+
+<!--Falta fazer o carrosel pra desktop -->
