@@ -32,6 +32,77 @@ body{
     display: none;
 
 }
+.carousel{
+    width: 1200px;
+}
+.carousel-item{
+    width: 600px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.carousel-item > h1{
+    font-size: 6em;
+    text-align: center;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.bt_car{
+    width: 600px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 81px;
+    margin: 20px auto;
+}
+#bt_free{
+    width: 300px;
+    border: none;
+    background-color: #7c26f8;
+    color: white;
+    border-radius: 20px;
+    height: 50px;
+    font-size: 1.2em;
+    padding: 5px;
+    position: absolute;
+    left: 290px;
+}
+#bt_premium{
+    width: 300px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 20px;
+    height: 50px;
+    font-size: 1.1em;
+    padding: 5px;
+    position: absolute;
+    right: 290px;
+}
+#bt_premium:hover{
+    background-color: rgba(0, 0, 0, 0.123);
+}
+#bt_free:hover{
+    background-color: #6514d6;
+}
+#ouca_agr{
+    width: 180px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 20px;
+    height: 46px;
+    font-size: 1.1em;
+    padding: 5px;
+    position: absolute;
+    left: 500px;
+    
+}
 header  nav  ul{
     cursor: pointer;
 }
@@ -71,6 +142,7 @@ nav{
 .ul_nav_menu{
     display: flex;
     gap:15px;
+    padding: 15px 0 0 0;
     flex-direction: row;
 }
 
@@ -79,7 +151,7 @@ nav{
     border-right: 1px solid white;
 }
 #first_2_ul{
-    padding: 0 0 0 18px;
+    padding: 0 0 0 20px;
 }
 section{
     background-color: white;
@@ -198,7 +270,7 @@ footer{
     text-decoration: underline;
 
 }
-h3{
+footer  h3{
     color: rgb(109, 109, 109);
     margin-bottom: 10px;
     font-size: 1.2em;
@@ -212,11 +284,11 @@ h3{
 
 }
 .iconsf{
-    width: 55px;
+    width: 40px;
 }
 #icons_footer{
     display: flex;
-    margin-left: 13%;
+    margin-left: 10%;
     align-items: center;
     padding-bottom: 40px;
 }
@@ -352,6 +424,22 @@ h3{
         width: 180px;
 
     }
+     .carousel {
+        max-width: 900px;
+            
+    }
+    .carousel-item > h1{
+        font-size: 4.9em;
+    }
+    #bt_free{
+        left: 140px;
+    }    
+    #bt_premium{
+        right: 140px;
+    }
+    #ouca_agr{
+        left: 375px;
+    }
     #box_text{
         font-size: 1em;
         width: 517px;
@@ -438,6 +526,29 @@ h3{
         max-width: 420px;
         justify-content: center;
         
+    }
+      
+    .carousel {
+    
+        width: 650px;
+            
+    }
+    .carousel-item > h1{
+        font-size: 4em;
+        font-weight: 1000;
+    }
+    .bt_car{
+        width: 250px;
+    }
+    #bt_free{
+        left: 180px;
+        bottom: 30px;
+    }    
+    #bt_premium{
+        right: 170px;
+    }
+    #ouca_agr{
+        left: 246px;
     }
     #header_son{
         height: 80px;
@@ -696,6 +807,42 @@ h3{
         top: 220px;
         right: 52px;
     }
+       .carousel {
+        position: relative;
+        max-width: 90%;
+    }
+    .carousel-item > h1{
+        font-size: 48px;
+        font-weight: 1000;
+        position: relative;
+        bottom: 20px;
+    }
+    .bt_car{
+        margin: auto auto;
+        display: block;
+    }
+    #bt_free{
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform:translate(-50%, 50%);
+        width: 270px;
+
+    }    
+    #bt_premium{
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 270px;
+
+    }
+    #ouca_agr{
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 @media screen and (min-width:451px) and (max-width:799px){
 
@@ -839,6 +986,40 @@ h3{
         top: 90px;
         left: 20px;
     }
+
+    .carousel {
+        position: relative;
+        max-width: 90%;
+    }
+    .carousel-item > h1{
+        font-size: 48px;
+        font-weight: 1000;
+        position: relative;
+        bottom: 20px;
+    }
+    .bt_car{
+        width: 250px;
+        margin: auto auto;
+        display: block;
+    }
+    #bt_free{
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform:translate(-50%, 50%);
+    }    
+    #bt_premium{
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #ouca_agr{
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 @media screen and (max-width: 630px){
     #nav_menu{
@@ -852,8 +1033,9 @@ h3{
     }
     .ul_nav_menu{
         flex-direction: column;
-        margin-bottom: 15px;
+        margin-bottom: 0;
         font-size: 1.6em;
+        padding: 0;
     }
     #menu.expandido{
         position: absolute;
@@ -862,6 +1044,7 @@ h3{
     }
     #last_1_ul{
         padding-right: 0px;
+        padding-bottom: 15px;
         border-right: none;
     }
     #first_2_ul{
@@ -874,7 +1057,6 @@ h3{
         position: absolute;
         top: 12px;
     }
-
 }
 @media  screen and (min-width: 629px) and (max-width: 798px) {
     #menu{display:
